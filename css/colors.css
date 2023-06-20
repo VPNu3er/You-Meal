@@ -1,0 +1,32 @@
+:root {
+    --yellow: #FFAB08;
+    --orange: #FF5C00;
+    --orange-2: #F86310;
+    --red-orange: #FF7020;
+    --black: #000000;
+    --soft-grey: #F9F9F9;
+    --grey: #F2F2F3;
+    --white: #ffff;
+    --white-grey: #b1b1b1;
+
+    --background-color: var(--soft-grey);
+    --order-background-color: var(--white);
+    --footer-background-color: var(--white);
+    --background-modal-delivery-color: var(--yellow);
+
+    --btn-color: var(--white);
+    --btn-active-color: var(--yellow);
+    --btn-hover-color: var(--orange-2);
+    --btn-close-color: var(--white-grey);
+    --btn-modal-color: var(--red-orange);
+
+    --btn-hover: var(--yellow);
+    --btn-focus: var(--orange-2);
+    --btn-disabled: var(--soft-grey);
+
+    --header__logo-color: var(--white);
+    --header__title-text-color: var(--white);
+    --header__title-text-red-color: var(--orange);
+    --text-color: var(--black);
+    --footer__logo-color: var(--red-orange);
+}

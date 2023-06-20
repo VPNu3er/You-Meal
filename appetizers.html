@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Meal - it's so tasty!</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="./img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#ffc40d">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="css/index.css">
+    
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header__container">
+            <svg class="header__logo" viewBox="0 0 199 44" role="img" aria-label="Логотип Your Meal">
+                <use href="img/sprite.svg#logo">
+            </svg>
+            <div class="header__title-container">
+                <h1>
+                    <span class="header__title-text">ORDER</span>
+                    <span class="header__title-text header__title-text-red">ONLINE</span>
+                </h1>
+                <p class="header__appeal">Don't feel like cooking today? We got you covered.
+                    Your favorite food just a click away!</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <nav class="navigation">
+            <div class="container  navigation__container">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="./index.html"><button class="navigation__button navigation__button_burgers">Burgers</button></a></li>
+                    <li class="navigation__item"><a href="./appetizers.html"><button class="navigation__button navigation__button_appetizers navigation__button_active">Appetizers</button></a></li>
+                    <li class="navigation__item"><a href="./hot-dogs.html"><button class="navigation__button navigation__button_hot-dogs">Hot-dogs</button></a></li>
+                    <li class="navigation__item"><a href="#"><button class="navigation__button navigation__button_combo-meals">Сombo meals</button></a></li>
+                    <li class="navigation__item"><a href="#"><button class="navigation__button navigation__button_doner-kebab">Doner kebab</button></a></li>
+                    <li class="navigation__item"><a href="#"><button class="navigation__button navigation__button_pizza">Pizza</button></a></li>
+                    <li class="navigation__item"><a href="#"><button class="navigation__button navigation__button_wok">Wok</button></a></li>
+                    <li class="navigation__item"><a href="#"><button class="navigation__button navigation__button_desserts">Desserts</button></a></li>
+                    <li class="navigation__item"><a href="#"><button class="navigation__button navigation__button_sauses">Sauses</button></a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <section class="catalog">
+            <div class="container catalog__container">
+                <div class="catalog__order order order_open">
+                    <section class="order__wrapper">
+                        <div class="order__wrap-title" tabindex="0" role="button">
+                            <h2 class="order__title">Basket</h2>
+
+                            <span class="order__count">4</span>
+                        </div>
+
+                        <div class="order__wrap_list">
+                            <ul class="order__list">
+                                <li class="order__item">
+                                    <img class="order__image" src="img/meals/chessy-chessy.jpg" alt="Cheesy cheese">
+
+                                    <div class="order__product">
+                                        <h3 class="order__product-title">Cheesy cheese</h3>
+
+                                        <p class="order__product-weight">512g</p>
+
+                                        <p class="order__product-price">21
+                                            <span class="currency">$</span>
+                                        </p>
+                                    </div>
+                                    
+                                    <div class="order__product-count">
+                                        <button class="count__minus">-</button>
+                                        <p class="count__amount">1</p>
+                                        <button class="count__plus">+</button>
+                                    </div>
+                                </li>
+
+                                <li class="order__item">
+                                    <img class="order__image" src="img/meals/friench-fries.jpg" alt="Friench fries">
+
+                                    <div class="order__product">
+                                        <h3 class="order__product-title">Friench fries</h3>
+
+                                        <p class="order__product-weight">180g</p>
+
+                                        <p class="order__product-price">9
+                                            <span class="currency">$</span>
+                                        </p>
+                                    </div>
+                                    
+                                    <div class="order__product-count">
+                                        <button class="count__minus">-</button>
+                                        <p class="count__amount">2</p>
+                                        <button class="count__plus">+</button>
+                                    </div>
+                                </li>
+
+                                <li class="order__item">
+                                    <img class="order__image" src="img/meals/spicy-hot-dog.jpg" alt="Fiery hot-dog">
+
+                                    <div class="order__product">
+                                        <h3 class="order__product-title">Fiery hot-dog</h3>
+
+                                        <p class="order__product-weight">245g</p>
+
+                                        <p class="order__product-price">14
+                                            <span class="currency">$</span>
+                                        </p>
+                                    </div>
+                                    
+                                    <div class="order__product-count">
+                                        <button class="count__minus">-</button>
+                                        <p class="count__amount">1</p>
+                                        <button class="count__plus">+</button>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <div class="order__total">
+                                <p>Buy it</p>
+                                <p>
+                                    <span class="order__total-amount">53</span>
+                                    <span class="currency">$</span>
+                                </p>
+                            </div>
+
+                            <button class="order__submit">Buy it</button>
+
+                            <div class="order__wrap-appeal">
+                                <p class="order__appeal">Dilivery free</p>
+                                <button class="order__close">Roll up</button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="catalog__wrapper">
+                     <h2 class="catalog__title">Burgers</h2>
+                    <div class="catalog__wrap_list">
+                        <ul class="catalog__list">
+                            <li class="catalog__item">
+                                <article class="product">
+                                    <img src="img/meals/nacho.jpg" alt="Supreme Nachos" class="product__image">
+
+                                    <p class="product__price">10<span class="currency">$</span></p>
+
+                                    <h3 class="product__title">
+                                        <button class="product__detail">Supreme Nachos</button>
+                                    </h3>
+
+                                    <p class="product__weight">220g</p>
+
+                                    <button class="product__add" type="button">Add to basket</button>
+                                </article>
+                            </li>
+
+                            <li class="catalog__item">
+                                <article class="product">
+                                    <img src="img/meals/friench-fries.jpg" alt="Friench fries" class="product__image">
+
+                                    <p class="product__price">9<span class="currency">$</span></p>
+
+                                    <h3 class="product__title">
+                                        <button class="product__detail">Friench fries</button>
+                                    </h3>
+
+                                    <p class="product__weight">180g</p>
+
+                                    <button class="product__add" type="button">Add to basket</button>
+                                </article>
+                            </li>
+
+                            <li class="catalog__item">
+                                <article class="product">
+                                    <img src="img/meals/onion_rings.jpg" alt="Onion rings" class="product__image">
+
+                                    <p class="product__price">7<span class="currency">$</span></p>
+
+                                    <h3 class="product__title">
+                                        <button class="product__detail">Onion rings</button>
+                                    </h3>
+
+                                    <p class="product__weight">160g</p>
+
+                                    <button class="product__add" type="button">Add to basket</button>
+                                </article>
+                            </li>
+                                </article>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <svg class="footer__logo" viewBox="0 0 199 44" role="img" aria-label="Логотип Your Meal">
+                    <use href="img/sprite.svg#logo">
+                </svg>
+
+                <address class="footer__address">
+                    <div class="footer__contact">
+                        <h2 class="footer__title">Order number</h2>
+
+                        <a class="footer__link-phone" href="tel: +00000000000">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.01 15.38C18.78 15.38 17.59 15.18 16.48 14.82C16.13 14.7 15.74 14.79 15.47 15.06L13.9 17.03C11.07 15.68 8.42 13.13 7.01 10.2L8.96 8.54C9.23 8.26 9.31 7.87 9.2 7.52C8.83 6.41 8.64 5.22 8.64 3.99C8.64 3.45 8.19 3 7.65 3H4.19C3.65 3 3 3.24 3 3.99C3 13.28 10.73 21 20.01 21C20.72 21 21 20.37 21 19.82V16.37C21 15.83 20.55 15.38 20.01 15.38Z" />
+                                </svg>
+                                
+                            <span>+0(000)000-00-00</span>
+                        </a>
+                    </div>
+
+                    <div class="footer__contact">
+                        <h2 class="footer__title footer__title_sn">Follow us</h2>
+
+                       <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__link-sn" aria-label="Telegram">
+                                <svg width="36" height="36" viewBox="0 0 36 36" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M36 18C36 22.7739 34.1036 27.3523 30.7279 30.7279C27.3523 34.1036 22.7739 36 18 36C13.2261 36 8.64773 34.1036 5.27208 30.7279C1.89642 27.3523 0 22.7739 0 18C0 13.2261 1.89642 8.64773 5.27208 5.27208C8.64773 1.89642 13.2261 0 18 0C22.7739 0 27.3523 1.89642 30.7279 5.27208C34.1036 8.64773 36 13.2261 36 18ZM18.6458 13.2885C16.8952 14.0175 13.3942 15.525 8.14725 17.811C7.29675 18.1485 6.849 18.4815 6.8085 18.8055C6.741 19.3522 7.42725 19.5683 8.361 19.863L8.75475 19.9868C9.67275 20.286 10.9102 20.6348 11.5515 20.6483C12.1365 20.6618 12.7867 20.4233 13.5045 19.9283C18.4072 16.6185 20.9385 14.9467 21.096 14.9107C21.2085 14.8837 21.366 14.8523 21.4695 14.9468C21.5752 15.039 21.564 15.2168 21.5528 15.264C21.4853 15.5542 18.792 18.0562 17.3993 19.3522C16.965 19.7572 16.6567 20.043 16.5938 20.1082C16.455 20.25 16.314 20.3895 16.1707 20.5268C15.3157 21.3503 14.6768 21.9668 16.2045 22.9748C16.9403 23.4608 17.5298 23.859 18.117 24.2595C18.756 24.696 19.395 25.1303 20.223 25.6748C20.4322 25.8098 20.6348 25.956 20.8305 26.0955C21.5753 26.6265 22.248 27.1035 23.0737 27.027C23.5553 26.982 24.0525 26.532 24.3045 25.182C24.9007 21.9938 26.073 15.0885 26.343 12.2423C26.3595 12.0056 26.3497 11.7679 26.3137 11.5335C26.2926 11.3443 26.201 11.17 26.0573 11.0452C25.8525 10.9039 25.6085 10.8307 25.3597 10.836C24.6847 10.8472 23.643 11.2095 18.6458 13.2885Z" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__link-sn" aria-label="Instagram">
+                                <svg width="38" height="38" viewBox="0 0 38 38" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19.0042 9.25521C13.6126 9.25521 9.26369 13.6041 9.26369 18.9958C9.26369 24.3874 13.6126 28.7363 19.0042 28.7363C24.3959 28.7363 28.7448 24.3874 28.7448 18.9958C28.7448 13.6041 24.3959 9.25521 19.0042 9.25521ZM19.0042 25.3284C15.52 25.3284 12.6716 22.4885 12.6716 18.9958C12.6716 15.5031 15.5115 12.6631 19.0042 12.6631C22.4969 12.6631 25.3369 15.5031 25.3369 18.9958C25.3369 22.4885 22.4885 25.3284 19.0042 25.3284ZM31.4152 8.85678C31.4152 10.1199 30.3979 11.1287 29.1432 11.1287C27.8801 11.1287 26.8713 10.1114 26.8713 8.85678C26.8713 7.60212 27.8886 6.58483 29.1432 6.58483C30.3979 6.58483 31.4152 7.60212 31.4152 8.85678ZM37.8665 11.1626C37.7224 8.11924 37.0272 5.42342 34.7977 3.20234C32.5766 0.98126 29.8808 0.286113 26.8374 0.133519C23.7007 -0.0445064 14.2993 -0.0445064 11.1626 0.133519C8.12772 0.277635 5.4319 0.972783 3.20234 3.19387C0.972783 5.41495 0.286113 8.11076 0.133519 11.1542C-0.0445064 14.2908 -0.0445064 23.6922 0.133519 26.8289C0.277635 29.8723 0.972783 32.5681 3.20234 34.7892C5.4319 37.0103 8.11924 37.7054 11.1626 37.858C14.2993 38.036 23.7007 38.036 26.8374 37.858C29.8808 37.7139 32.5766 37.0187 34.7977 34.7892C37.0187 32.5681 37.7139 29.8723 37.8665 26.8289C38.0445 23.6922 38.0445 14.2993 37.8665 11.1626ZM33.8143 30.1944C33.153 31.856 31.873 33.1361 30.2029 33.8058C27.7021 34.7977 21.7679 34.5688 19.0042 34.5688C16.2406 34.5688 10.2979 34.7892 7.80558 33.8058C6.144 33.1446 4.86392 31.8645 4.1942 30.1944C3.20234 27.6936 3.43123 21.7594 3.43123 18.9958C3.43123 16.2321 3.21082 10.2895 4.1942 7.7971C4.85544 6.13553 6.13553 4.85544 7.80558 4.18572C10.3064 3.19386 16.2406 3.42275 19.0042 3.42275C21.7679 3.42275 27.7105 3.20234 30.2029 4.18572C31.8645 4.84696 33.1446 6.12705 33.8143 7.7971C34.8061 10.2979 34.5772 16.2321 34.5772 18.9958C34.5772 21.7594 34.8061 27.7021 33.8143 30.1944Z" />
+                                </svg>                                    
+                            </a>
+                        </li>
+                       </ul>
+                    </div>
+                </address>
+                <div class="footer__development">
+                   <p>© YouMeal, 2023</p>
+                   <p>Design: <a href="#">Anastasia Ilina</a></p>
+                   <p>Developer: <a href="#">Anna Kozak</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal modal_product">
+        <div class="modal__main modal-product">
+            <div class="modal-product__container">
+                <h2 class="modal-product__title">Vegan killer</h2>
+                <div class="modal-product__content">
+                    <img src="img/meals/meaty-bomb.jpg" alt="Vegan killer" class="modal-product__image">
+
+                    <p class="modal-product__description">Super meat delight! A big juicy beef patty made from fresh beef will captivate you with its succulence, while crispy lettuce leaves will add a touch of freshness.</p>    
+                    <div class="modal-product__ingredients ingredients">
+                        <h3 class="ingredients__title">Ingredients</h3>
+
+                        <ul class="ingredients__list">
+                            <li class="ingredients__item">Wheat bun</li>
+                            <li class="ingredients__item">Beef patty</li>
+                            <li class="ingredients__item">Red onion</li>
+                            <li class="ingredients__item">Lettuce leaves</li>
+                            <li class="ingredients__item">Mustard sauce</li>
+                        </ul>
+                        <p class="ingredients__calories">520g, kkal 430</p>
+                    </div>
+                </div>
+                <div class="modal-product__footer">
+                    <div class="modal-product__add">
+                        <button class="modal-product__btn">Add to basket</button>
+
+                        <div class="order__product-count">
+                            <button class="count__minus">-</button>
+                            <p class="count__amount">1</p>
+                            <button class="count__plus">+</button>
+                        </div>  
+
+                    </div>
+                    <p class="modal-product__price">21
+                        <span class="currency">$</span>
+                    </p>
+                </div>
+            </div>
+
+            <button class="modal__close">
+                <svg width="29" height="30" viewBox="0 0 29 30" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="7.07422" y="8.28247" width="1" height="20" transform="rotate(-45 7.07422 8.28247)" />
+                    <rect x="7.78125" y="22.4246" width="1" height="20" transform="rotate(-135 7.78125 22.4246)" />
+                </svg>
+            </button>
+        </div>
+    </div>
+    <div class="modal modal_delivery">
+        <div class="modal__main modal-delivery">
+            <div class="modal-delivery__container">
+                <h2 class="modal-delivery__title">Delivery</h2>
+                <form class="modal-delivery__form id="delivery"">
+                    <fieldset class="modal-delivery__fieldset">
+                        <input class="modal-delivery__input" type="text" name="name" placeholder="Contact Name">
+                        <input class="modal-delivery__input" type="tel" name="phone" placeholder="Telepfone">
+                    </fieldset>
+
+                    <fieldset class="modal-delivery__fieldset modal-delivery__fieldset_radio">
+                        <label class="modal-delivery__label">
+                            <input id="pickup" class="modal-delivery__radio" type="radio" name="format" value="pickup">
+                            <span>Takeout</span>
+                        </label> 
+
+                        <label class="modal-delivery__label">  
+                            <input class="modal-delivery__radio" type="radio" name="format" value="delivery">
+                            <span>Delivery</span>
+                        </label>
+                    </fieldset>
+
+                    <fieldset class="modal-delivery__fieldset">
+                        <input class="modal-delivery__input" type="text" name="address" placeholder="Street address, apt., suite etc">
+                        <input class="modal-delivery__input modal-delivery__input_half" type="number" name="floor" placeholder="Floor">
+                        <input class="modal-delivery__input modal-delivery__input_half" type="number" name="intercom" placeholder="Intercom">
+                    </fieldset>
+                </form>
+
+                <button class="modal-delivery__submit" type="submit" form="delivery">Create an order</button>
+            </div>
+
+            <button class="modal__close">
+                <svg width="29" height="30" viewBox="0 0 29 30" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="7.07422" y="8.28247" width="1" height="20" transform="rotate(-45 7.07422 8.28247)" />
+                    <rect x="7.78125" y="22.4246" width="1" height="20" transform="rotate(-135 7.78125 22.4246)" />
+                </svg>
+            </button>
+        </div>
+        
+    </div>
+    <script>
+        document.querySelector('.order__wrap-title').addEventListener('click', () => {
+            document.querySelector('.order').classList.toggle('order_open')
+        })
+    </script>
+</body>
+</html>
